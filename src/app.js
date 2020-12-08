@@ -17,7 +17,7 @@ const solicitanteRoute = require("./routes/solicitanteRoutes")
 
 
 app.use("/", teste) //chama teste
-app.use("/solicitante", solicitanteRoute) //solicitante
+app.use("/solicitantes", solicitanteRoute) //solicitante
 
 
 module.exports = app 
