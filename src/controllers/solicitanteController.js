@@ -48,7 +48,7 @@ const addSolicitante = (req, res) => {
       return res.status(400).send(error)
     } else {
       return res.status(200).send({
-        mensagem: "Cadastro realizado com sucesso!",
+        mensagem: `${"Cadastro realizado com sucesso - HELP Brasil para informações: https://help.unhcr.org/brazil/#_ga=2.186131113.1648763200.1607413216-2053606720.1606725861"}`,
         cadastro
       })
     }
