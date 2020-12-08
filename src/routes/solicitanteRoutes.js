@@ -20,6 +20,8 @@ router.post('/criar', controller.addSolicitante)
 //http://localhost:33/solicitantes/atualizar/[ID]"
 router.put('/atualizar', controller.updateSolicitante)
 
+router.patch('/campo', controller.updateField)
+
 //http://localhost:33/solicitantes/del?_id=5fceca15682d5931e43d97ce
 router.delete('/del', controller.deleteById)
 
