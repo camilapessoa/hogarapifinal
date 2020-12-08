@@ -31,6 +31,11 @@ const institutoSchema = new Schema({
     required: true
   },
 
+  telefone:{
+    type: String,
+    required: true
+  },
+
   endereco: {
     type: String,
     required: true
