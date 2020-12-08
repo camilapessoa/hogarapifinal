@@ -15,9 +15,15 @@ app.use(express.json())
 const teste = require("./routes/teste") //testar servidor
 const solicitanteRoute = require("./routes/solicitanteRoutes")
 
+//chama teste
+app.use("/", teste) 
 
-app.use("/", teste) //chama teste
-app.use("/solicitantes", solicitanteRoute) //solicitante
+//solicitante
+app.use("/solicitantes", solicitanteRoute) 
+
+//institutos
+
+
 
 
 module.exports = app 
