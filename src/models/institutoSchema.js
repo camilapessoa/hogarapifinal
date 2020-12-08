@@ -41,7 +41,7 @@ const institutoSchema = new Schema({
     required: true
   },
 
-  Servico: {
+  servico: {
     type: String,
     required: true
   },
