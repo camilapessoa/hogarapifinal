@@ -11,6 +11,11 @@ const controller = require('../controllers/institutoController')
 
 router.get("/", controller.getAllInst)
 
+router.get("/nome", controller.getNameInst)
+
 router.post("/criar", controller.addInstituto)
+
+router.delete("/del", controller.deleteInstById)
+
 
 module.exports = router;
