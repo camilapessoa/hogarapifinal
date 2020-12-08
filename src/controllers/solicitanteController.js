@@ -55,7 +55,7 @@ const addSolicitante = (req, res) => {
   })
 }
 
-// Atualiza completamente cadastro do solicitante e retorna mensagem amigável Obs: id não pode ser modificado
+//Atualiza completamente cadastro do solicitante e retorna mensagem amigável Obs: id não pode ser modificado
 const updateSolicitante = (req, res) => {
   const idParam = req.query
   const contatoBody = req.body
@@ -80,6 +80,33 @@ const updateSolicitante = (req, res) => {
   }
   )
 }
+
+//Atualiza a propriedade endereço ou celular do cadastro pelo id - front irá inserir qual campo deseja atualizar
+const updateField = (req, res) => {
+  const idParam = req.query
+  const celular = req.body.celular
+  const enderecoAtual = req.body.enderecoAtual
+
+  const update = { runValidators: true }
+
+  solicitanteCollection.findByIdAndUpdate(idParam, { "celular": celular } || { "enderecoAtual": enderecoAtual }, update, (error, contato) => {
+
+    if (error) {
+      return res.status(500).send({
+        mensagem: "Algo inesperado aconteceu ao atualizar",
+        error
+      })
+
+    } else {
+      return res.status(200).send({
+        mensagem: "sucesso",
+        contato
+      })
+    }
+  })
+}
+
+
 
 //DELETE - deleta solicitante por id específico e retorna mensagem - próprio solicitante e instituições com permissão
 //csolicitante/deletar/[_ID]" 
@@ -110,6 +137,7 @@ module.exports = {
   getName,
   addSolicitante,
   updateSolicitante,
+  updateField,
   deleteById
 }
 
