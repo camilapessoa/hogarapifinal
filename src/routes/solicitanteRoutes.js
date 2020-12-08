@@ -14,9 +14,10 @@ router.get("/",controller.getAll)
 //http://localhost:33/solicitantes/nome/Bianca
 router.get('/nome/:nome', controller.getName)
 
-//http://localhost:33/solicitantes/criars
-router.post('/criars', controller.addSolicitante)
+//http://localhost:33/solicitantes/criar
+router.post('/criar', controller.addSolicitante)
 
+//http://localhost:33/solicitantes/del?_id=5fceca15682d5931e43d97ce
 router.delete('/del', controller.deleteById)
 
 module.exports = router;
