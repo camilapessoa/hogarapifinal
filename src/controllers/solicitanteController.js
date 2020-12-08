@@ -55,6 +55,31 @@ const addSolicitante = (req, res) => {
   })
 }
 
+// Atualiza completamente cadastro do solicitante e retorna mensagem amigável Obs: id não pode ser modificado
+const updateSolicitante = (req, res) => {
+  const idParam = req.query
+  const contatoBody = req.body
+  const update = { new: true }
+
+  contatoCollection.findByIdAndUpdate(idParam, contatoBody, update, (error, solicitante) => {
+
+    if (error) {
+      return res.status(500).send({
+        mensagem: "Algo inesperado aconteceu ao atualizar!",
+        error
+      })
+
+    } else {
+      return res.status(200).send({
+        mensagem: "Cadastro atualizado com sucesso",
+        solicitante
+      })
+    }
+
+
+  }
+  )
+}
 
 //DELETE - deleta solicitante por id específico e retorna mensagem - próprio solicitante e instituições com permissão
 //csolicitante/deletar/[_ID]" 
@@ -84,6 +109,7 @@ module.exports = {
   getAll,
   getName,
   addSolicitante,
+  updateSolicitante,
   deleteById
 }
 
