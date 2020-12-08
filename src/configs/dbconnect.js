@@ -12,6 +12,8 @@ const connect = () => {
   mongoose.connect(DB_URL,
     {
       useNewUrlParser: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
       useUnifiedTopology: true
     })
   const connection = mongoose.connection
