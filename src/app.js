@@ -23,6 +23,9 @@ const institutoRoute = require("./routes/institutoRoutes")
 //chama blog
 const blogRoute = require("./routes/blogRoutes")
 
+//chama voluntário
+const voluntarioRoute = require("./routes/voluntarioRoutes")
+
 //teste
 app.use("/", teste) 
 
@@ -34,6 +37,9 @@ app.use("/instituto", institutoRoute)
 
 //blog
 app.use("/blog", blogRoute)
+
+//voluntario
+app.use("/voluntario", voluntarioRoute)
 
 
 
