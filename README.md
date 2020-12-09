@@ -1,4 +1,4 @@
-# Modelo com campos obrigatórios para criar Postman
+# Modelo com campos obrigatórios para teste no Postman
 
 ## Solicitantes
 
@@ -23,6 +23,24 @@
             "servico": "voluntariado",
             "telefone": "(91) 3073 5700",
             "email": "brabrhr@unhcr.org"      
+    }
+
+## Blog
+
+    {
+                "title": "Doações de brinquedos",
+                "subject": "Doações",
+                "content": "Doações para crianças carentes, entre em contato conosco através de abrigonovolar@org.com"
+    }
+
+## Voluntários
+
+    {
+                "nome": "Paula",
+                "voluntariado": "aulas de português, aulas de culinária",
+                "dataNascimento": "10/03/1992",
+                "endereco": "São Braz, 168",
+                "celular": "(91) 89536999"
     }
 
 <https://help.unhcr.org/brazil/#_ga=2.186131113.1648763200.1607413216-2053606720.1606725861>
