@@ -72,9 +72,13 @@ const solicitanteSchema = new Schema({
   },
 
   idioma: {
-    type: String,
+    type: Array,
+    items: {
+      type: String
+    },
     required: true
   },
+
   email: {
     type: String,
     required: false
