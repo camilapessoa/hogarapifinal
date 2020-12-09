@@ -84,12 +84,17 @@ const updateSolicitante = (req, res) => {
 //Atualiza a propriedade endereço ou celular do cadastro pelo id - front irá inserir qual campo deseja atualizar
 const updateField = (req, res) => {
   const idParam = req.query
-  const celular = req.body.celular
-  const enderecoAtual = req.body.enderecoAtual
+  const { celular, enderecoAtual }= req.body
+  //const enderecoAtual = req.body.enderecoAtual
+  //const celular = req.body.celular
+  const field = {
+    "celular": celular,
+    "enderecoAtual": enderecoAtual
+  }
 
   const update = { runValidators: true }
-
-  solicitanteCollection.findByIdAndUpdate(idParam, { "celular": celular } || { "enderecoAtual": enderecoAtual }, update, (error, contato) => {
+//{"celular":celular} || {"enderecoAtual": enderecoAtual}
+  solicitanteCollection.findByIdAndUpdate(idParam, field, update, (error, contato) => {
 
     if (error) {
       return res.status(500).send({
