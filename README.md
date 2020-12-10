@@ -11,7 +11,7 @@
             "celular": "Nao tem",
             "ocupacao": "domestica",
             "formacao": "fundamental",
-            "idioma": "espanhol, portugues"
+            "idioma": ["espanhol", "portugues"]
     }
 
 ## Instituições
@@ -31,13 +31,14 @@
                 "title": "Doações de brinquedos",
                 "subject": "Doações",
                 "content": "Doações para crianças carentes, entre em contato conosco através de abrigonovolar@org.com"
+                "tags": ["voluntario", "abrigo"]
     }
 
 ## Voluntários
 
     {
                 "nome": "Paula",
-                "voluntariado": "aulas de português, aulas de culinária",
+                "voluntariado": ["aulas de português", "aulas de culinária"],
                 "dataNascimento": "10/03/1992",
                 "endereco": "São Braz, 168",
                 "celular": "(91) 89536999"
