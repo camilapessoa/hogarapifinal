@@ -32,7 +32,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 - Desenvolvimento de uma rede de apoio mútuo entre refugiados, sociedade civil, ONGs, empresas através de cadastros;
 - Auxiliar no fomento de políticas públicas a partir dos dados obtidos;
 
-## ✅ Aprendizados
+## ✅Aprendizados
 
 Para a execução do projeto final, desenvolvemos uma API fundamentada no modelo que utiliza quatro operações básicas, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). Dessa forma podemos trabalhar com as informações dispostas em um banco de dados NoSQL. Para acessar e tratar as operações, o código foi organizado em uma Arquitetura embasada no sistema Model View Controller (MVC).
 
