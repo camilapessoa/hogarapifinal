@@ -13,20 +13,21 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 # Sumário
 =================
 <!--ts-->
-   * [Objetivos](#Objetivos)
+   * [Objetivos](#objetivos)
    * [Aprendizados](#aprendizados)
-   * [Arquitetura Model View Controller](#Arquitetura)
-   * [Instalação](#instalacao)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Rodando o Back End](#Rodando-BackEnd)
+   * [Arquitetura Model View Controller](#arquitetura)
+   * [Instalação](#instalação)
+      * [Pre Requisitos](#pré-requisitos)
+      * [Rodando o Back End](#rodando-o-back-end)
       * [Tecnologias](#tecnologias)
       * [Features](#features)
-      * [Rotas](#Rotas)
-   * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo_teste)
-   * [Agradecimentos](#Agradecimentos)
+      * [Rotas](#rotas)
+   * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-com-campos-obrigatórios-para-testenopostman)
+   * [Agradecimentos](#agradecimentos)
 <!--te-->
 
 ## ✅ Objetivos
+
 - Mapeamento do perfil e necessidades dos refugiados através de cadastros na API;
 - Desenvolvimento de uma rede de apoio mútuo entre refugiados, sociedade civil, ONGs, empresas através de cadastros;
 - Auxiliar no fomento de políticas públicas a partir dos dados obtidos;
@@ -88,7 +89,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o database NoSQL [Mongodb](https://www.mongodb.com/)
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Rodando o Back End (server)
+### 🎲 Rodando o Back End 
+
+Server Local
 
 ```bash
 # Com o git
@@ -110,7 +113,9 @@ $ npm start
 ```
 * Modifique `.env` para receber as variáveis de ambiente e substitua para que seu servidor funcione adequadamente
 
-* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar a API
+Para acessar via Heroku, acesse o [link da API](https://api-hogar.herokuapp.com/)
+
+* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
 
 ## 🛠 Tecnologias
 
