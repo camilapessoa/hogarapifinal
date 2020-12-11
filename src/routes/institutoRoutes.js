@@ -13,6 +13,8 @@ router.get("/", controller.getAllInst)
 
 router.get("/nome", controller.getNameInst)
 
+router.put('/atualizar', controller.updateInst)
+
 router.post("/criar", controller.addInstituto)
 
 router.delete("/del", controller.deleteInstById)
