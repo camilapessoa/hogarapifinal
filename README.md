@@ -13,7 +13,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 # Sumário
 =================
 <!--ts-->
-   * [Objetivos](##--objetivos)
+   * [Objetivos](#objetivos)
    * [Aprendizados](#aprendizados)
    * [Arquitetura Model View Controller](#arquitetura)
    * [Instalação](#instalação)
@@ -22,7 +22,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
       * [Tecnologias](#tecnologias)
       * [Features](#features)
       * [Rotas](#rotas)
-   * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-com-campos-obrigatórios-para-testenopostman)
+   * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-com-campos-obrigatórios-para-teste)
    * [Agradecimentos](#agradecimentos)
 <!--te-->
 
@@ -189,7 +189,7 @@ Heroku: https://api-hogar.herokuapp.com/
 
 [![Badge](https://img.shields.io/badge/heroku-deploy-green)](https://api-hogar.herokuapp.com/) ![Badge](https://img.shields.io/github/forks/camilapessoa/hogarapifinal) ![Badge](https://img.shields.io/github/issues/camilapessoa/hogarapifinal) ![Badge](https://img.shields.io/github/stars/camilapessoa/hogarapifinal)
 
-## ✅Modelo com campos obrigatórios para teste no Postman
+## ✅Modelo com campos obrigatórios para teste
 
 ### 🎲 Solicitantes
 
