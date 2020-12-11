@@ -52,6 +52,32 @@ const addInstituto = (req,res) => {
   })
 }
 
+//Atualiza completamente cadastro do instituto e retorna mensagem amigável Obs: id não pode ser modificado
+const updateInst = (req, res) => {
+  const idParam = req.query
+  const contatoBody = req.body
+  const update = { new: true }
+
+  institutoCollection.findByIdAndUpdate(idParam, contatoBody, update, (error, instituto) => {
+
+    if (error) {
+      return res.status(500).send({
+        mensagem: "Algo inesperado aconteceu ao atualizar!",
+        error
+      })
+
+    } else {
+      return res.status(200).send({
+        mensagem: "Cadastro atualizado com sucesso",
+        instituto
+      })
+    }
+
+
+  }
+  )
+}
+
 //DELETE - deleta instituto por id específico e retorna mensagem - próprio solicitante e instituições com permissão" 
 const deleteInstById = (req, res) => {
   const idParam = req.query
@@ -79,5 +105,6 @@ module.exports = {
   getAllInst,
   getNameInst,
   addInstituto,
+  updateInst,
   deleteInstById
 }
