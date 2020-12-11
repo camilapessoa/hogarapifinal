@@ -153,37 +153,36 @@ MongoDB: [mongodb://localhost:27017/apihogar]()
 Heroku: https://api-hogar.herokuapp.com/
 
 
-##### Retorna teste com apresentação 
+#### Retorna teste com apresentação 
 { mensagem: O app está rodando em http://localhost:33 }
 - [x] "/" 
 
-##### Retorna todos os dados do banco de dados
+#### Retorna todos os dados do banco de dados
 - [x] "/solicitantes/" 
 - [x]"/instituto/" 
 - [x]"/blog/ "
 - [x]"/voluntario/"
 
-##### Cria novo cadastro ou postagem e retorna mensagem amigável
+#### Cria novo cadastro ou postagem e retorna mensagem amigável
 - [x] "/**/criar" 
 
-##### Retorna cadastro por nome específico
+#### Retorna cadastro por nome específico
 - [x] "**/nome/[NOME]" 
 
-#####Deleta cadastro ou postagem por id específico e retorna mensagem amigável
+#### Deleta cadastro ou postagem por id específico e retorna mensagem amigável
 - [x] "/**/del/[ID]" 
 - [x] "/blog/deletar/[ID]" 
 
 
-##### Atualiza somente o campo escolhido do cadastro ou postagem por id específico e retorna mensagem amigável
+#### Atualiza somente o campo escolhido do cadastro ou postagem por id específico e retorna mensagem amigável
 - [x] "/**/campo/[ID]" 
 
 
-##### Atualiza somente o campo "celular" e "endereçoatual" do cadastro do solicitante por id específico e retorna mensagem amigável
+#### Atualiza somente o campo "celular" e "endereçoatual" do cadastro do solicitante por id específico e retorna mensagem amigável
 - [x] "/solicitantes/campo/[ID]" 
 
-##### Atualiza completamente cadastro e retorna mensagem amigável (id não pode ser modificado)
+#### Atualiza completamente cadastro e retorna mensagem amigável (id não pode ser modificado)
 - [x] "/**/atualizar/[ID]"
-
 
 
 
@@ -205,7 +204,7 @@ Heroku: https://api-hogar.herokuapp.com/
             "idioma": ["espanhol", "portugues"]
     }
 
-### 🎲 Instituições
+#### 🎲 Instituições
     {
             "nomeRazao": "ACNUR",
             "CNPJ": "07.100754 / 0001/62 4",
