@@ -146,11 +146,11 @@ Funcionalidades da aplicação
 
 ### 🎲Rotas
 
-local: http://localhost:33
+* local: http://localhost:33
 
-MongoDB: [mongodb://localhost:27017/apihogar]()
+* MongoDB: [mongodb://localhost:27017/apihogar]()
 
-Heroku: https://api-hogar.herokuapp.com/
+* Heroku: https://api-hogar.herokuapp.com/
 
 
 #### Retorna teste com apresentação 
