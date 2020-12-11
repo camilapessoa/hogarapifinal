@@ -13,7 +13,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 # Sumário
 =================
 <!--ts-->
-   * [Objetivos](#objetivos)
+   * [Objetivos](##--objetivos)
    * [Aprendizados](#aprendizados)
    * [Arquitetura Model View Controller](#arquitetura)
    * [Instalação](#instalação)
@@ -26,7 +26,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
    * [Agradecimentos](#agradecimentos)
 <!--te-->
 
-## ✅ Objetivos
+## ✅Objetivos
 
 - Mapeamento do perfil e necessidades dos refugiados através de cadastros na API;
 - Desenvolvimento de uma rede de apoio mútuo entre refugiados, sociedade civil, ONGs, empresas através de cadastros;
@@ -36,7 +36,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 
 Para a execução do projeto final, desenvolvemos uma API fundamentada no modelo que utiliza quatro operações básicas, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). Dessa forma podemos trabalhar com as informações dispostas em um banco de dados NoSQL. Para acessar e tratar as operações, o código foi organizado em uma Arquitetura embasada no sistema Model View Controller (MVC).
 
-## ✅ Arquitetura
+## ✅Arquitetura
 
         Arquitetura MVC
         |
@@ -80,16 +80,16 @@ Para a execução do projeto final, desenvolvemos uma API fundamentada no modelo
 Clique para visualizar o desenho da [Arquitetura](/assets/apihogararquitetura.png)
 
 
-## ✅ Instalação
+## ✅Instalação
 * Para realizar download do projeto, siga as instruções:
 
-### 🎲 Pré-requisitos
+### 🎲Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o database NoSQL [Mongodb](https://www.mongodb.com/)
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Rodando o Back End 
+### 🎲Rodando o Back End 
 
 Server Local
 
@@ -117,7 +117,7 @@ Para acessar via Heroku, acesse o [link da API](https://api-hogar.herokuapp.com/
 
 * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
 
-## 🛠 Tecnologias
+## 🛠Tecnologias
 
 Para a consturição do projeto, as seguintes tecnologiasforam utilizadas:
 
@@ -132,7 +132,7 @@ Para a consturição do projeto, as seguintes tecnologiasforam utilizadas:
 - [cors](https://www.npmjs.com/package/cors)
 - [heroku](https://dashboard.heroku.com/apps)
 
-### 🎲 Features
+### 🎲Features
 
 Funcionalidades da aplicação
 
@@ -144,8 +144,7 @@ Funcionalidades da aplicação
 - [x] Update em todos os campos - PUT
 - [x] Update em campo específico - PATCH
 
-
-### 🎲 Rotas
+### 🎲Rotas
 
 local: http://localhost:33
 
@@ -154,37 +153,35 @@ MongoDB: [mongodb://localhost:27017/apihogar]()
 Heroku: https://api-hogar.herokuapp.com/
 
 
+##### Retorna teste com apresentação 
+{ mensagem: O app está rodando em http://localhost:33 }
+- [x] "/" 
 
-- [x] "/" Retorna teste com apresentação { mensagem: O app está rodando em http://localhost:33 }
-
-Retorna todos os dados do banco de dados
+##### Retorna todos os dados do banco de dados
 - [x] "/solicitantes/" 
 - [x]"/instituto/" 
 - [x]"/blog/ "
 - [x]"/voluntario/"
 
-Cria novo cadastro ou postagem e retorna mensagem amigável
+##### Cria novo cadastro ou postagem e retorna mensagem amigável
 - [x] "/**/criar" 
 
-
-Retorna cadastro por nome específico
+##### Retorna cadastro por nome específico
 - [x] "**/nome/[NOME]" 
 
-
-Deleta cadastro ou postagem por id específico e retorna mensagem amigável
+#####Deleta cadastro ou postagem por id específico e retorna mensagem amigável
 - [x] "/**/del/[ID]" 
 - [x] "/blog/deletar/[ID]" 
 
 
-Atualiza somente o campo escolhido do cadastro ou postagem por id específico e retorna mensagem amigável
+##### Atualiza somente o campo escolhido do cadastro ou postagem por id específico e retorna mensagem amigável
 - [x] "/**/campo/[ID]" 
 
 
-Atualiza somente o campo "celular" e "endereçoatual" do cadastro do solicitante por id específico e retorna mensagem amigável
+##### Atualiza somente o campo "celular" e "endereçoatual" do cadastro do solicitante por id específico e retorna mensagem amigável
 - [x] "/solicitantes/campo/[ID]" 
 
-
-Atualiza completamente cadastro e retorna mensagem amigável (id não pode ser modificado)
+##### Atualiza completamente cadastro e retorna mensagem amigável (id não pode ser modificado)
 - [x] "/**/atualizar/[ID]"
 
 
@@ -192,7 +189,7 @@ Atualiza completamente cadastro e retorna mensagem amigável (id não pode ser m
 
 [![Badge](https://img.shields.io/badge/heroku-deploy-green)](https://api-hogar.herokuapp.com/) ![Badge](https://img.shields.io/github/forks/camilapessoa/hogarapifinal) ![Badge](https://img.shields.io/github/issues/camilapessoa/hogarapifinal) ![Badge](https://img.shields.io/github/stars/camilapessoa/hogarapifinal)
 
-## ✅ Modelo com campos obrigatórios para teste no Postman
+## ✅Modelo com campos obrigatórios para teste no Postman
 
 ### 🎲 Solicitantes
 
