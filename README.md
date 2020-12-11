@@ -5,7 +5,8 @@ API desenvolvida como Projeto Final para a conclusão do curso de Backend [{Repr
 
 Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/apihogarCamila.pdf)
 
-   >Os grupos de refugiados são compelidos a sair de seu país de origem devido a existência de conflitos, miséria e circunstâncias que ferem gravemente a ordem pública. Trata-se de um processo doloroso e forçado, e por isso procuram refúgio em outro país. Entendemos que ainda há carência de políticas públicas para acolher os refugiados ou solicitantes de refúgio, pois muitos vivem em situação de vulnerabilidade, por outro lado, muitos não conseguem crédito em bancos ou mesmo acesso a educação.
+   >Os grupos de refugiados são compelidos a sair de seu país de origem devido a existência de conflitos, miséria e circunstâncias que ferem gravemente a ordem pública. Trata-se de um processo doloroso e forçado, e por isso procuram refúgio em outro país. Entendemos que ainda há carência de políticas públicas para acolher os refugiados ou solicitantes de refúgio, pois muitos vivem em situação de vulnerabilidade.Além disso, é comum não conseguirem crédito em bancos ou mesmo acesso a educação.
+   >
    >Pensando nisso, acredito que o primeiro passo para oferecer o suporte necessário às pessoas nessa condição é realizar um mapeamento de seu perfil e de suas necessidades. Em um segundo momento, objetivamos auxiliar no desenvolvimento de uma rede de apoio entre os próprios refugiados, sociedade civil, e conectar pessoas às instituições que oferecem suporte adequado (ONGs, bancos que ofereçam crédito ou serviços, empresas e instituições públicas que ainda permanecem descentralizadas), buscando integrar esses elementos às políticas públicas.
 
 
