@@ -61,7 +61,7 @@ const updateSolicitante = (req, res) => {
   const contatoBody = req.body
   const update = { new: true }
 
-  contatoCollection.findByIdAndUpdate(idParam, contatoBody, update, (error, solicitante) => {
+  solicitanteCollection.findByIdAndUpdate(idParam, contatoBody, update, (error, solicitante) => {
 
     if (error) {
       return res.status(500).send({
