@@ -159,9 +159,9 @@ Funcionalidades da aplicação
 
 #### Retorna todos os dados do banco de dados
 - [x] "/solicitantes/" 
-- [x]"/instituto/" 
-- [x]"/blog/ "
-- [x]"/voluntario/"
+- [x] "/instituto/" 
+- [x] "/blog/ "
+- [x] "/voluntario/"
 
 #### Cria novo cadastro ou postagem e retorna mensagem amigável
 - [x] "/**/criar" 

@@ -18,7 +18,7 @@ const getAllInst = (req, res) => {
 
 //GET getName - busca os institutos pelo nome - geral
 const getNameInst = (req, res) => {
-  solicitanteCollection.findOne({ nome: req.params.nome }, (error, nome) => {
+  institutoCollection.findOne({ nome: req.params.nome }, (error, nome) => {
     if (nome) {
       return res.status(200).json({
         mensagem: "Apoiador encontrado",
@@ -78,10 +78,10 @@ const updateInst = (req, res) => {
   )
 }
 
-//DELETE - deleta instituto por id específico e retorna mensagem - próprio solicitante e instituições com permissão" 
+//DELETE - deleta instituto por id específico e retorna mensagem - próprio instituto e instituições com permissão" 
 const deleteInstById = (req, res) => {
   const idParam = req.query
-  solicitanteCollection.findByIdAndDelete(idParam, (error, apoiador) => {
+  institutoCollection.findByIdAndDelete(idParam, (error, apoiador) => {
     if (error) {
       return res.status(500).send({
         mensagem: "Algo inesperado aconteceu ao deletar",
