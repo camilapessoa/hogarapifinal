@@ -18,7 +18,7 @@ const getAllInst = (req, res) => {
 
 //GET getName - busca os institutos pelo nome - geral
 const getNameInst = (req, res) => {
-  institutoCollection.findOne({ nome: req.params.nomeRazao }, (error, nome) => {
+  institutoCollection.findOne({ nomeRazao: req.params.nomeRazao }, (error, nome) => {
     if (nome) {
       return res.status(200).json({
         mensagem: "Apoiador encontrado",
