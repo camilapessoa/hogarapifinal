@@ -11,7 +11,7 @@ const controller = require('../controllers/institutoController')
 
 router.get("/", controller.getAllInst)
 
-router.get("/nome", controller.getNameInst)
+router.get("/nome/:nome", controller.getNameInst)
 
 router.put('/atualizar', controller.updateInst)
 
