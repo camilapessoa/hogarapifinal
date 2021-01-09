@@ -1,3 +1,4 @@
+![iconHogar](/assets/iconhogar.png)
 
 # API - HOGAR
 ## 🚀 Descrição
@@ -14,6 +15,7 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 =================
 <!--ts-->
    * [Objetivos](#objetivos)
+   * [Público-alvo](#publico-alvo)
    * [Aprendizados](#aprendizados)
    * [Arquitetura Model View Controller](#arquitetura)
    * [Instalação](#instalação)
@@ -31,6 +33,15 @@ Para visualizar a descrição completa do projeto, siga [API - HOGAR](/assets/ap
 - Mapeamento do perfil e necessidades dos refugiados através de cadastros na API;
 - Desenvolvimento de uma rede de apoio mútuo entre refugiados, sociedade civil, ONGs, empresas através de cadastros;
 - Auxiliar no fomento de políticas públicas a partir dos dados obtidos;
+
+## ✅Público-alvo
+Agentes interessados em contribuir com a causa:
+- Solicitantes de refúgio e refugiados.
+- Voluntários.
+- Instituições, Abrigos, ONGs: auxiliar o diálogo entre solicitantes, voluntários e prefeitura.
+- Empresas: encontrar novos colaboradores.
+- Bancos: auxiliar através de crédito para o estabelecimento de micro e pequeno empresário.
+- Prefeituras: realizar o mapeamento dos refugiados e promover o diálogo entre solicitantes e instituições no geral.
 
 ## ✅Aprendizados
 
@@ -121,16 +132,16 @@ Para acessar via Heroku, acesse o [link da API](https://api-hogar.herokuapp.com/
 
 Para a consturição do projeto, as seguintes tecnologiasforam utilizadas:
 
-- [JavaScript](https://www.javascript.com/)
-- [Git/Github](https://github.com/)
-- [Node.js](https://nodejs.org/en/)
-- [MongoDb](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Nodemon](https://nodemon.io/)
-- [Express](https://expressjs.com/pt-br/)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [cors](https://www.npmjs.com/package/cors)
-- [heroku](https://dashboard.heroku.com/apps)
+- [x] [JavaScript](https://www.javascript.com/)
+- [x] [Git/Github](https://github.com/)
+- [x] [Node.js](https://nodejs.org/en/)
+- [x] [MongoDb](https://www.mongodb.com/)
+- [x] [Mongoose](https://mongoosejs.com/)
+- [x] [Nodemon](https://nodemon.io/)
+- [x] [Express](https://expressjs.com/pt-br/)
+- [x] [dotenv](https://www.npmjs.com/package/dotenv)
+- [x] [cors](https://www.npmjs.com/package/cors)
+- [x] [heroku](https://dashboard.heroku.com/apps)
 
 ### 🎲Features
 
@@ -153,6 +164,22 @@ Funcionalidades da aplicação
 * Heroku: https://api-hogar.herokuapp.com/
 
 
+| Métodos|  Endpoint     | Descrição          |   Observações  |
+| -------| ---------     | ---------          | -------------- |
+| GET |  "/"             |Retorna teste com apresentação |{API - HOGAR http://localhost:33}|
+| GET |  "/solicitantes/"|Retorna todos os dados do banco de dados  |
+| GET |  "/instituto/"   |Retorna todos os institutos               |
+| GET |  "/blog/ "   | Retorna todas as postagens|                            |
+| GET |  "/voluntario/"  |Retorna todos os voluntários|
+| GET | "**/nome/[NOME]" | Retorna cadastro por nome específico|
+|POST | "/**/criar" | Cria novo cadastro ou postagem | Retorna mensagem
+| DELETE | "/**/del/[ID]" | Deleta cadastro por id|
+|DELETE | "/blog/deletar/[ID]" | Deleta postagem por id|
+| PATCH| "/**/campo/[ID]" | Atualiza campo selecionado do cadastro ou postagem por ID | 
+| PATCH | "/solicitantes/campo/[ID]" | Atualiza somente o campo "celular" e "endereçoatual" do cadastro do solicitante por id |
+| PUT | "/**/atualizar/[ID]" | Atualiza completamente cadastro | Retorna mensagem amigável (id não pode ser modificado)
+
+<!--
 #### Retorna teste com apresentação 
 { mensagem: O app está rodando em http://localhost:33 }
 - [x] "/" 
@@ -183,8 +210,7 @@ Funcionalidades da aplicação
 
 #### Atualiza completamente cadastro e retorna mensagem amigável (id não pode ser modificado)
 - [x] "/**/atualizar/[ID]"
-
-
+-->
 
 [![Badge](https://img.shields.io/badge/heroku-deploy-green)](https://api-hogar.herokuapp.com/) ![Badge](https://img.shields.io/github/forks/camilapessoa/hogarapifinal) ![Badge](https://img.shields.io/github/issues/camilapessoa/hogarapifinal) ![Badge](https://img.shields.io/github/stars/camilapessoa/hogarapifinal)
 
@@ -238,14 +264,16 @@ Funcionalidades da aplicação
 
         Autenticação
         Sistema de Login
+        Relação entre Schemas
         Fórum
+        Front End
 
 Conheça a [Agência da ONU para Refugiados](https://help.unhcr.org/brazil/#_ga=2.186131113.1648763200.1607413216-2053606720.1606725861)
 
 # Agradecimentos
 
 O caminho para se tornar Dev é árduo e certamente preciso agradecer imensamente a diversas pessoas que me auxiliaram nesse início de jornada.
-Em primeiro lugar à minha filha, que é o lugar de onde resgato as forças necessárias para continuar. Aos meus pais e irmãs pelo suporte e amor de tamanho incomensurável (eu não conseguiria sem vocês). Ao meu grande amor, JP, que me deu o presente mais belo.
+Em primeiro à minha filha, que é o lugar de onde resgato as forças necessárias para continuar. Aos meus pais e irmãs pelo suporte e amor de tamanho incomensurável (eu não conseguiria sem vocês). Ao meu grande amor, JP, que me deu o presente mais belo.
 
 A rede de apoio constituída na {Reprograma} é gigantesca, aprendi que nossa força é infinita e que podemos conquistar qualquer coisa juntas. A vivência com essas mulheres foi de um aprendizado Inesquecível e que vou levar para toda minha vida.
 
